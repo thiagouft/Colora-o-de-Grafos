@@ -1,0 +1,12 @@
+digraph G {
+{
+node [margin=0 fontcolor=black fontsize=32 width=0.5 shape=circle style=filled]
+}
+digraph G {
+{
+node [margin=0 fontcolor=black fontsize=32 width=0.5 shape=circle style=filled]
+}
+digraph G {
+{
+node [margin=0 fontcolor=black fontsize=32 width=0.5 shape=circle style=filled]
+}

@@ -11,7 +11,7 @@ public class main {
         //Scanner s = new Scanner(System.in);
         //t1 = s.nextLine();
         
-        Graph graph = new Graph("C:\\Users\\Fernando\\Documents\\NetBeansProjects\\Graph\\src\\Graph\\" + t1);
+        Graph graph = new Graph("C:\\Users\\Thiago\\Documents\\Thiago HD\\UFT COMPUTAÇÃO\\4ºSemestre\\Teoria dos Grafos\\Graph\\src\\Graph" + t1);
         graph.preencher_linhas_iniciais("digraph G {");
         graph.preencher_linhas_iniciais("{");
         graph.preencher_linhas_iniciais("node [margin=0 fontcolor=black fontsize=32 width=0.5 shape=circle style=filled]");

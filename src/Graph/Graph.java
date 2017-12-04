@@ -54,7 +54,7 @@ public class Graph {
     }
     
     public void preencher_linhas_iniciais(String linha){
-        a.escritor("C:\\Users\\Fernando\\Documents\\5_periodo\\graph.txt", linha);
+        a.escritor("C:\\Users\\Thiago\\Documents\\Thiago HD\\UFT COMPUTAÇÃO\\4ºSemestre\\Teoria dos Grafos\\Graph\\src\\Graph.txt", linha);
     }
 
     public Graph(String _path) {
