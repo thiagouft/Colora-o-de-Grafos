@@ -54,7 +54,10 @@ public class Graph {
     }
     
     public void preencher_linhas_iniciais(String linha){
-        a.escritor("C:\\Users\\Thiago\\Documents\\Thiago HD\\UFT COMPUTAÇÃO\\4ºSemestre\\Teoria dos Grafos\\Graph\\src\\Graph.txt", linha);
+        a.escritor("C:\\Users\\Fernando\\Documents\\5_periodo\\graph.dot", linha);
+    }
+    public void preencher_linhas_de_verticies(String arquivo) throws IOException{
+        a.leitor("C:\\Users\\Fernando\\Documents\\NetBeansProjects\\Graph\\src\\Graph\\" + arquivo);
     }
 
     public Graph(String _path) {
@@ -93,10 +96,16 @@ public class Graph {
             if ((vertex_color_index.containsKey(vertices.get(i).node))) {
             } else {
                 vertex_color_index.put(vertices.get(i).node, "Cor " + i + "\n"); //color first vertex in list with color 1
-                preencher_linhas_iniciais(vertices.get(i).node + " [fillcolor="+cor(i)+" fixedsize=true]");
+                
+                //AQUI VAI DEFINIR AS CORES DOS VERTICES
+                preencher_linhas_iniciais("\t\t"+vertices.get(i).node + " [fillcolor="+cor(i)+" fixedsize=true]");
+                
                 for (int j = i + 1; j < vertices.size(); j++) {
                     if (!(vertices.get(i).neighbors.contains(vertices.get(j).node)) && !(vertex_color_index.containsKey(vertices.get(j).node))) {
                         vertex_color_index.put(vertices.get(j).node, "Cor " + i + "\n");
+                        
+                        //AQUI VAI DEFINIR AS CORES DOS VERTICES
+                        preencher_linhas_iniciais("\t\t"+vertices.get(j).node + " [fillcolor="+cor(i)+" fixedsize=true]");
                     }
                 }
             }
